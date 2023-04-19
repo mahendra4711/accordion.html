@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-tabs.css">
+    
+</head>
+<body>
+    <div class="accordion">
+        <div class="acco_bs">
+            <h4 class="active">Section-1 <span></span></h4>
+            <div class="prg ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, odio? Facere veritatis quos adipisci exercitationem soluta, dicta iusto earum neque excepturi illo nisi debitis culpa vel nemo voluptatum distinctio quaerat.</p>
+            </div>
+        </div>
+        <div class="acco_bs">
+            <h4>Section-2 <span></span></h4>
+            <div  class="prg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nihil eaque, vitae exercitationem aut iusto sunt perferendis, quidem id cumque animi eum, cupiditate fuga! Dicta explicabo animi inventore optio sint?</p>
+            </div>
+        </div>
+        <div class="acco_bs">
+            <h4>Section-3 <span></span></h4>
+            <div  class="prg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nihil eaque, vitae exercitationem aut iusto sunt perferendis, quidem id cumque animi eum, cupiditate fuga! Dicta explicabo animi inventore optio sint?</p>
+            </div>
+        </div>
+        <div class="acco_bs">
+            <h4>Section-4 <span></span></h4>
+            <div class="prg" >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nihil eaque, vitae exercitationem aut iusto sunt perferendis, quidem id cumque animi eum, cupiditate fuga! Dicta explicabo animi inventore optio sint?</p>
+            </div>
+        </div>
+        <div class="acco_bs">
+            <h4>Section-5 <span></span></h4>
+            <div class="prg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nihil eaque, vitae exercitationem aut iusto sunt perferendis, quidem id cumque animi eum, cupiditate fuga! Dicta explicabo animi inventore optio sint?</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="jquery-3.6.3.js"></script>
+    <script src="jquery.responsiveTabs.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            $('.acco_bs h4').click(function(){
+                $('.acco_bs .prg').slideUp()
+                $('.acco_bs h4').removeClass("active")
+                $(this).addClass("active")
+                $(this).next().slideDown()
+            });
+        });
+    </script>
+</body>
+</html>
