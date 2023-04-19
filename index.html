@@ -7,7 +7,77 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive-tabs.css">
+    <style>
     
+        
+        
+        
+.accordion {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px 30px;
+    display: block;
+    background-color: rgb(170, 190, 190);
+    border-radius: 8px;
+}
+.acco_bs {
+    box-shadow: 0 0 20px #4e4949;
+    margin-bottom: 20px;
+}
+h4{
+    font-size: 22px;
+    background-color: #365e5f;
+    padding: 10px 20px;
+    color: aliceblue;
+    cursor: pointer;
+    position: relative;
+}
+h4 span{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    height: 25px;
+    width: 25px;
+    color: #365e5f;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+}
+h4 span::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    top: 11px;
+    right: 5px;
+    border-bottom: 3px solid black;
+}
+h4 span::before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    top: 5px;
+    right: 11px;
+    border-left: 3px solid black;
+}
+.active span::before{
+    display: none;
+}
+.prg p{
+    padding: 30px;
+    background-color: rgb(38, 48, 44);
+    color: rgb(185, 184, 182);
+}
+.acco_bs .prg{
+    display: none;
+}
+.acco_bs:nth-child(1) .prg{
+    display: block;
+}
+
+        
+        
+        
+    </style>
 </head>
 <body>
     <div class="accordion">
